@@ -1,0 +1,7 @@
+<h1>{{ object.nome }}</h1>
+<p>Idade: {{ object.idade }}</p>
+<p>Bairro: {{ object.bairro }}</p>
+<p>Número de Celular: {{ object.numero_celular }}</p>
+<p>Estado Civil: {{ object.estado_civil }}</p>
+<a href="{% url 'membro_update' object.pk %}">Editar</a>
+<a href="{% url 'membro_list' %}">Voltar para a Lista</a>
